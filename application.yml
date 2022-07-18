@@ -5,4 +5,4 @@ config:
                 id: react_app
                 secret: 123456
             jwt:
-                key: secret_key
+                key: authentication_secret_key
