@@ -1,0 +1,23 @@
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://mpostgres12:5432/user_service
+    username: postgres
+    password: sa
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    hibernate:
+      ddl-auto: create
+      jdbc:
+        lob:
+          non_contextual_creation: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
